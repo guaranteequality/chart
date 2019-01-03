@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <!-- Generate using http://realfavicongenerator.net/ -->
+
+
+    
+  </head>
+  <body>
+    <div class="app">
+        <div class="app__sidebar">
+    <a href="" class="app__sidebar-logo">
+        <img src="./images/logo-white.png" alt="Al Maha Systems" class="app__sidebar-logo-img">
+    </a>
+
+    <nav class="app__sidebar-nav">
+        <a href="" class="app__sidebar-nav-link">Dashboard</a>
+        <a href="" class="app__sidebar-nav-link active">Statistic</a>
+        <a href="" class="app__sidebar-nav-link">Owerview</a>
+        <a href="" class="app__sidebar-nav-link">Farms</a>
+        <a href="" class="app__sidebar-nav-link">Settings</a>
+    </nav>
+</div>
+        <div class="app__content">
+            <div class="app__header">
+	<div class="app__header-hamburger hamburger hamburger--slider">
+		<div class="hamburger-box">
+			<div class="hamburger-inner"></div>
+		</div>
+	</div>
+    <div class="app__header-controls">
+        <a href="" class="user">
+            <img src="./images/avatar-sample.jpg" alt="">
+            Mark Drake
+        </a>
+        <button class="btn btn--primary">Admin</button>
+    </div>
+</div>
+            
+  <div class="app__container content content--report">
+    <div class="content__header">
+      <h2 class="content__header-title">Farm Statistics</h2>
+      
+      <div class="content__header-controls">
+        <ul class="content__header-controls-list">
+          <li class="content__header-controls-item"><a href="" class="content__header-controls-link">Quarterly</a></li>
+          <li class="content__header-controls-item"><a href="" class="content__header-controls-link">YTD</a></li>
+          <li class="content__header-controls-item">
+            <a href="" class="content__header-controls-link active">
+              Annual
+            </a>
+            <ul class="sub-menu">
+              <li><a href="">2018</a></li>
+              <li><a href="">2017</a></li>
+              <li><a href="">2016</a></li>
+              <li><a href="">2015</a></li>
+              <li><a href="">2014</a></li>
+              <li><a href="">2013</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content__body">
+      <!-- <div class="ct-chart ct-perfect-fourth"></div> -->
+      <!-- <img class="content__graph" style="" src="./images/graph-statistics.png" alt=""> -->
+      <div class="chart content__graph--statistics">
+        <!-- <canvas id="chart_statistics" width="200" height="200"></canvas> -->
+        <canvas id="bar-chart-horizontal" width="1200" height="400"></canvas>
+      </div>
+      <!-- <img class="content__graph" style="" src="./images/graph-statistics.png" alt=""> -->
+    </div>
+
+    <div class="content__footer">
+      <ul>
+        <li><a class="is-active" href=""># of sick cows</a></li>
+        <li><a href="">Farm Growth Rate</a></li>
+        <li><a href="">Farm Status</a></li>
+        <li><a href=""># of Breeding Cows</a></li>
+        <li><a href="">Milk Yield</a></li>
+        <li><a href="">Farm Costs</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="app__container app__table">
+    <div class="app__table-header">
+      <h1>Action Required</h1>
+      <a href="" class="link-all">Show all Cows</a>
+    </div>
+    <div class="app__table-wrapper">
+      <table>
+        <thead>
+          <td>Cow ID</td>
+          <td>Health Status</td>
+          <td>Temperature</td>
+          <td>Activity</td>
+          <td>Action</td>
+          <td>Ranch</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="amount">1</span>
+              399
+            </td>
+            <td>
+              <i class="circle red"></i>
+              Sick
+            </td>
+            <td>
+              38.6
+            </td>
+            <td>
+              Low
+            </td>
+            <td>
+              <i class="attention-icon"></i>
+              Needs attention
+            </td>
+            <td>
+              East Upper
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="amount">2</span>
+              395
+            </td>
+            <td>
+              <i class="circle green"></i>
+              Healthy
+            </td>
+            <td>
+              38.6
+            </td>
+            <td>
+              Normal
+            </td>
+            <td>
+              Breeding
+              <span class="date">10 / 11 / 2018</span>
+            </td>
+            <td>
+              West Upper
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="amount">3</span>
+              445
+            </td>
+            <td>
+              <i class="circle yellow"></i>
+              Getting Sick
+            </td>
+            <td class="text-red">
+              36.6
+            </td>
+            <td>
+              Normal
+            </td>
+            <td>
+              <i class="attention-icon"></i>
+              Needs attention
+            </td>
+            <td>
+              South Ranch
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="amount">4</span>
+              456
+            </td>
+            <td>
+              <i class="circle red"></i>
+              Sick
+            </td>
+            <td class="text-red">
+              40.1
+            </td>
+            <td>
+              Low
+            </td>
+            <td>
+              <i class="attention-icon"></i>
+              Needs attention
+            </td>
+            <td>
+              Field Ranch
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="amount">5</span>
+              675
+            </td>
+            <td>
+              <i class="circle red"></i>
+              Sick
+            </td>
+            <td class="text-red">
+              41.1
+            </td>
+            <td>
+              Low
+            </td>
+            <td>
+              <i class="attention-icon"></i>
+              Needs attention
+            </td>
+            <td>
+              West Lower
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+        </div>
+    </div>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
+      <script src="app.js"></script>
+    
+  </body>
+</html>
